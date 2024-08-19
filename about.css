@@ -1,0 +1,83 @@
+
+
+.navBar{
+ background: rgb(250, 250, 250);
+}
+
+.navDivider, .navDivider_1{
+ height: 25px;
+ background-color: rgb(160, 198, 63);
+}
+
+.navDivider_1{
+ border-top: 1px solid rgb(250, 250, 250);
+}
+
+#logo{
+ height: 80px;
+ width: auto;
+
+}
+
+.navList ul{
+ display: inline-flex;
+ flex-direction: row;
+ align-items: end;
+ list-style: none;
+ margin-top: 6%;
+ font-size: 15px;
+}
+
+.navList li{
+ padding: 0px 25px 0px 25px;
+}
+
+.navList a{
+ text-decoration: none;
+color: slategray;
+}
+
+.main{
+ background-color: rgb(250, 250, 250);
+}
+
+.pdate{
+ border-bottom: 1px solid lightslategray;
+}
+#phone{
+ text-decoration: none;
+}
+
+.foot{
+ background-color: black;
+ color: azure;
+}
+.sitemap a {
+ text-decoration: none;
+ color:azure ;
+}
+.sitemap a:visited{
+ color: azure;
+}
+
+.social_icons img{
+ height: 20px;
+ opacity: .5;
+ padding-right: 15px;
+}
+
+.bt1{
+ background-color: rgb(160, 198, 63);
+ color: azure;
+}
+.backToTop img{
+ height: 15px;
+ opacity: .6;
+}
+.backToTop{
+ height: 30px;
+ width: 30px;
+ background-color: rgb(160, 198, 63);
+ border-radius: 100%;
+ border: none;
+}
