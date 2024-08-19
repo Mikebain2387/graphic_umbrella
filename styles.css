@@ -1,8 +1,8 @@
-
-
-.navBar{
+.top, .sect, #mainBody{
  background: rgb(250, 250, 250);
 }
+
+
 
 .navDivider, .navDivider_1{
  height: 25px;
@@ -38,7 +38,7 @@ color: slategray;
 }
 
 .main{
- background-color: rgb(250, 250, 250);
+ background-color: rgb(255, 255, 255);
 }
 
 .pdate{
@@ -80,4 +80,32 @@ color: slategray;
  background-color: rgb(160, 198, 63);
  border-radius: 100%;
  border: none;
+}
+
+.sect{
+padding-bottom: 30px;
+}
+
+.mainContent p, .sideContent{
+ border-bottom: 3px dashed rgb(191, 188, 188);
+ padding: 5px;
+}
+.emptybox{
+ height: 80px;
+ width: 350px;
+ border: 2px solid black;
+}
+
+
+
+
+.heroContainer{
+ background: rgb(160, 198, 63);
+ padding: 5px;
+ width: 100vw;
+}
+
+.webLogos img{
+ height: 175px;
+ width: auto;
 }
