@@ -109,3 +109,17 @@ padding-bottom: 30px;
  height: 175px;
  width: auto;
 }
+
+.highlight{
+ color: rgb(160, 198, 63);
+}
+
+.box1{
+ background: white;
+}
+
+.boxButton{
+ background: rgb(160, 198, 63);
+ border: none;
+ color: white;
+}
