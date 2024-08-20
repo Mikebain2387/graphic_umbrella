@@ -26,6 +26,10 @@
 color: slategray;
 }
 
+.navList a:hover{
+ text-decoration: underline;
+}
+
 .main{
  background-color: rgb(255, 255, 255);
 }
@@ -111,4 +115,9 @@ padding-bottom: 30px;
  background: rgb(160, 198, 63);
  border: none;
  color: white;
+}
+
+button:active {
+ vertical-align: top;
+ transform: scale(.9);
 }
