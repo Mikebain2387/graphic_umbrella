@@ -135,7 +135,7 @@ console.log(businessCardButtons);
 function boxButtonColorChange(){
  for (let i = 0; i < businessCardButtons.length; i++) {
   const element = businessCardButtons[i];
-businessCardButtons[i].style.background="purple"
+businessCardButtons[i].style.background="dodgerblue"
   
  }
 }
@@ -182,5 +182,15 @@ console.log(webTitle)
 
 //? eventlistener
 
-let inputName = document.getElementById('name')
+let inputName = document.getElementById("name")
 console.log(inputName)
+//created variable to save input values
+let savedInfo = "";
+
+inputName.addEventListener("input", () => {
+ //this is grabbing the inputboxes value
+ // innertext is only for text tags
+let currentInput = inputName.value;
+savedInfo = currentInput;
+console.log(savedInfo)
+})
