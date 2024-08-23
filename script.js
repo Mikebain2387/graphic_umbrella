@@ -85,25 +85,102 @@ serviceImageOne.addEventListener("click", stylingText);
 
 
 //! test
-
+// #1
+//? image node list
 let testImage = document.querySelectorAll(".webLogos img");
 console.log(testImage);
-let navBarColor = document.querySelectorAll("navList a");
+
+//? nav list node list
+let navBarColor = document.querySelectorAll(".navList a");
 console.log(navBarColor);
 
-for(n=0;n<navBarColor.length;n++){
- navBarColor.push(n)
-}
+
 
 function navTextColor(){
- for (let i = 0; i < testImage.length; i++) {
-  const element = testImage[i];
-  console.log(element)
-  if (element ===testImage[3]){
-   navBarColor.style.color = "dodgerblue";
-  }
+ //? for loop, loops through my nav list items and returns them inside const element
+ for (let i = 0; i < navBarColor.length; i++) {
+  const element = navBarColor[i];
+  console.log(element[i])
+  
+
+   navBarColor[i].style.color = "dodgerblue";
+  
+  
+ }
+}
+//? testImage[3] calls my mobiel image which was the 4th item in the image node list.  onced clicked runs function 
+testImage[3].addEventListener("click", navTextColor)
+
+// #2
+
+//let serviceColumns = document.querySelectorAll(".serviceIcons h3");
+//? changes text back from pizza to support
+console.log(serviceColumns);
+serviceColumns[1].innerHTML = "Support";
+
+// #3
+
+let hoverSpan = document.getElementsByClassName("highlight");
+console.log(hoverSpan)
+function hoveredChange(){
+ console.log("Mr. Portfolio")
+}
+
+hoverSpan[0].addEventListener("mouseover", hoveredChange);
+
+//#4
+let businessCardButtons = document.getElementsByClassName('boxButton');
+console.log(businessCardButtons);
+
+function boxButtonColorChange(){
+ for (let i = 0; i < businessCardButtons.length; i++) {
+  const element = businessCardButtons[i];
+businessCardButtons[i].style.background="purple"
   
  }
 }
 
-testImage.addEventListener("click", navTextColor)
+//businessCardButtons[0].addEventListener("click" , boxButtonColorChange)
+boxButtonColorChange()
+
+
+// #5
+/*
+let mooImage = document.getElementsByClassName("miniCardImage");
+console.log(mooImage)
+
+
+
+mooImage[0].addEventListener("click", () => {
+ let portfolioSubHeadings = document.querySelectorAll('.boxContent h3');
+ console.log(portfolioSubHeadings)
+});
+
+
+ for (let i = 0; i < portfolioSubHeadings.length; i++) {
+  const element = portfolioSubHeadings[i];
+  portfolioSubHeadings[i].style.fontSize = "60px"
+ };
+
+
+*/
+
+
+
+
+ //! grabbing an elements text value:
+let webTitle = document.querySelector(".webIcon h3").innerText;
+console.log(webTitle)
+
+//* or console.log(webTitle.innerText)
+
+
+
+//!  input boxes
+//? grabbing values
+//? onChanges
+
+//? eventlistener
+
+let inputName = document.getElementById('name')
+console.log(inputName)
